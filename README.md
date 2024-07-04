@@ -49,13 +49,13 @@ pip install -r requirements.txt
  - Environment Variables:
    Create a .env file in the root directory with the following content:
    ``` bash
-URL="your_mongodb_url_here"
- ``` 
-- Running the Application:
- Start the FastAPI application:
+  URL="your_mongodb_url_here"
+   ``` 
+ - Running the Application:
+    Start the FastAPI application:
    ``` bash
-uvicorn main:app --reload
-```
+    uvicorn main:app --reload
+    ```
  - Accessing Endpoints:
   Status Count Endpoint: Open your browser and navigate to http://localhost:8000/status_count to retrieve status counts between specified start and end times.
 
