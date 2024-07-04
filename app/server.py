@@ -1,11 +1,12 @@
 from pymongo.mongo_client import MongoClient
 from fastapi import Query, HTTPException
-from config import MONGO_URL, MONGO_COLLECTION, MONGO_DATABASE
+from config import MONGO_COLLECTION, MONGO_DATABASE
 
 import datetime
 import json
+import os
 
-
+MONGO_URL = os.environ.get("URL")
 client = MongoClient(MONGO_URL)
 db = client[MONGO_DATABASE]
 collection = db[MONGO_COLLECTION]
