@@ -8,7 +8,7 @@ Before running the application, ensure you have the following installed:
 
 - Python 3.x
 - MongoDB (running locally or accessible via URI)
-- rabbitMQ
+- RabbitMQ
 
 ## Setup
 
@@ -35,3 +35,14 @@ By default, RabbitMQ listens on port 5672. We can use the following command to s
  sudo systemctl enable rabbitmq-server
  sudo rabbitmq-plugins enable rabbitmq_mqtt
 ```
+# Install dependencies:
+After cloning the repository.Create and activate a virtual environment (optional but recommended):
+``` bash
+python -m venv venv
+source venv/bin/activate
+```
+ - Install dependencies:
+ ``` bash
+cd app
+pip install -r requirements.txt
+ ``` 
