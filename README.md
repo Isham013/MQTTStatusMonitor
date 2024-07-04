@@ -33,25 +33,5 @@ By default, RabbitMQ listens on port 5672. We can use the following command to s
 ``` bash
  sudo systemctl start rabbitmq-server
  sudo systemctl enable rabbitmq-server
- sudo # Server installation: RabbitMQ
-To install RabbitMQ, follow the installation guide for your operating system:
-
-Installing RabbitMQ on Linux: https://www.rabbitmq.com/install-debian.html
-
-Installing RabbitMQ on Windows: https://www.rabbitmq.com/install-windows.html
-
-Installing RabbitMQ on macOS: https://www.rabbitmq.com/install-homebrew.html
-
-
-
-Configuration
-Once we have  installed Celery and RabbitMQ, we will need to configure them for our project.
-
-
-RabbitMQ
-
-By default, RabbitMQ listens on port 5672. We can use the following command to start RabbitMQ:
-``` bash
- sudo systemctl start rabbitmq-server
- sudo systemctl enable rabbitmq-server
  sudo rabbitmq-plugins enable rabbitmq_mqtt
+```
